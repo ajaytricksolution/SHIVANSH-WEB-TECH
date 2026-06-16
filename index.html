@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIVANSH WEB TECH | Lucknow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        html { scroll-behavior: smooth; }
+        body { background: #f8fafc; color: #1e293b; }
+
+        /* Navigation */
+        nav { background: #1a1a1a; padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: 800; color: #38bdf8; text-transform: uppercase; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { text-decoration: none; color: white; font-size: 14px; font-weight: 600; }
+
+        /* Hero Section */
+        .hero { height: 90vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+                display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; }
+        .btn-main { padding: 15px 40px; background: #00ff00; color: black; border-radius: 50px; font-weight: bold; text-decoration: none; margin-top:20px; }
+
+        /* Services Grid */
+        .section { padding: 80px 8%; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .service-card { background: white; padding: 30px; text-align: center; border: 1px solid #eee; border-radius: 10px; }
+
+        /* Pricing Section */
+        .pricing-section { padding: 80px 8%; background: #f1f5f9; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 40px; }
+        .price-card { background: white; padding: 30px; border-radius: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .original-price { text-decoration: line-through; color: #94a3b8; }
+        .discount-price { color: #e11d48; font-size: 24px; font-weight: bold; }
+
+        /* Career Form */
+        .career-area { padding: 80px 8%; }
+        .form-card { max-width: 600px; margin: auto; background: white; padding: 40px; border-radius: 10px; border: 1px solid #ddd; }
+        input, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        .btn-submit { width: 100%; padding: 15px; background: #38bdf8; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+
+        /* Floating WhatsApp */
+        .wa-float { position: fixed; bottom: 30px; right: 30px; z-index: 9999; }
+        
+        footer { background: #1a1a1a; color: #ccc; padding: 40px 8%; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SHIVANSH WEB TECH</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#career">Careers</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <h1>Go Digital With Shivansh</h1>
+        <p>Premium Web Design, SEO & Digital Marketing Agency.</p>
+        <a href="#services" class="btn-main">View Services</a>
+    </header>
+
+    <section class="section" id="services">
+        <h2 style="text-align:center;">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card"><h3>Web Design</h3><p>Affordable Websites</p></div>
+            <div class="service-card"><h3>SEO</h3><p>Rank on Top</p></div>
+            <div class="service-card"><h3>Digital Marketing</h3><p>Growth Solutions</p></div>
+            <div class="service-card"><h3>App Development</h3><p>Modern Solutions</p></div>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+        <h2 style="text-align:center;">Website Plans (Limited Offer)</h2>
+        <div class="pricing-grid">
+            <div class="price-card"><h3>Basic</h3><p class="original-price">₹12,500</p><p class="discount-price">₹9,999</p></div>
+            <div class="price-card"><h3>Advance</h3><p class="original-price">₹19,999</p><p class="discount-price">₹14,999</p></div>
+            <div class="price-card"><h3>Premium</h3><p class="original-price">₹28,500</p><p class="discount-price">₹19,999</p></div>
+            <div class="price-card"><h3>Ultimate</h3><p class="original-price">₹45,000</p><p class="discount-price">₹29,999</p></div>
+        </div>
+    </section>
+
+    <section class="career-area" id="career">
+        <h2 style="text-align:center; margin-bottom:20px;">Apply for Career</h2>
+        <div class="form-card">
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="url" placeholder="Portfolio Link" required>
+                <textarea placeholder="Your Experience" rows="3"></textarea>
+                <button type="submit" class="btn-submit">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <a href="https://wa.me/919935833344" class="wa-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="60" alt="WhatsApp">
+    </a>
+
+    <footer>
+        <p>SHIVANSH WEB TECH | Kishanpath, Eldeco, Lucknow</p>
+        <p>Email: jnvpatna52@gmail.com | Mobile: 9935833344</p>
+    </footer>
+
+</body>
+</html>
